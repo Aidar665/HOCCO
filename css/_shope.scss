@@ -140,6 +140,9 @@
     opacity: 0;
     transition: opacity 0.5s;
     width: 13.3333333333rem;
+    :last-child{
+        margin: 0;
+    }
 }
 
 .dropdown:hover .shope__clikc{
