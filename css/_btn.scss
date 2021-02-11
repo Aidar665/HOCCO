@@ -1,0 +1,48 @@
+.btn{
+    font-size: rem(19px);
+    font-weight: bold;
+    padding: rem(25px) rem(37px);
+    text-transform: uppercase;
+    border-radius: rem(100px);
+    line-height: 1;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+.btn--theme--white{
+    width: rem(159px);
+    background: #fff;
+    color: #365A49;
+    }
+
+.btn--theme--white:hover{
+    color: #fff;
+    background: #365A49;
+}
+
+.btn--theme--green{
+    font-size: rem(16px);
+    line-height: rem(18px);
+    background: #365A49;
+    color: #fff;
+}
+
+.btn--theme--green:hover{
+    color: #365A49;
+    background: #fff;
+}
+
+.btn--theme--transparent{
+    color: #497870;
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    background: transparent;
+    text-transform: none;
+}
+
+.btn--theme--transparent:hover{
+    color:#F2F5F4;
+}

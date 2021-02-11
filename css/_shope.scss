@@ -1,0 +1,212 @@
+.dropdown{
+    @include tablets{
+        display: none;
+    }
+}
+.shope__item{
+    display: flex;
+    margin-bottom: rem(0px);
+    margin-top: rem(75px);
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.shope__img{
+    @include tablets{
+    display: block;
+    width: 250px;
+    height: 250px;
+    background: url(../img/shope/shope.png) center center;
+    background-size: contain;
+}
+}
+
+.shope__title{
+    margin-top: rem(23px);
+    font-weight: bold;
+    font-size: rem(36px);
+    line-height: rem(43px);
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    color: #292929;
+    width: rem(360px);
+    @include tablets{
+        width: 500px;
+    }
+    @include phones{
+        width: 450px;
+    }
+}
+
+
+.batonhics{
+    @include tablets{
+    display: none;
+}
+}
+
+
+.shope__text{
+    width: rem(315px);
+    margin-bottom: rem(46px);
+    @include tablets{
+        width: 500px;
+    }
+    @include phones{
+        width: 450px;
+        padding: 7px;
+    }
+}
+
+.shope__desc{
+    display: flex;
+    margin-bottom: rem(24px);
+    @include tablets{
+        justify-content: center;
+    }
+}
+
+.shope__descblock{
+    margin-right: rem(40px);
+    &:last-child{
+        margin: 0;
+    }
+}
+
+.shope__descvalut{
+    color: #000000;
+    font-size: rem(18px);
+    line-height: rem(22px);
+    font-weight: bold;
+}
+
+.shope__descvalutblock{
+    display: flex;
+    @include tablets{
+        justify-content: center;
+    }
+}
+
+.shope__descvalutp{
+    width: rem(130px);
+    color: #151515;
+    font-size: rem(60px);
+    line-height: rem(60px);
+}
+
+
+
+.shope__section{
+    background:url(../img/shope/hernica.jpg) no-repeat right bottom, url(../img/shope/Yzor.png) no-repeat right bottom , #F8FAF9;;
+
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    @include tablets{
+    &::before{
+        background:url(../img/shope/shope.png) ;
+    }
+}
+}
+
+.slider__img{
+    margin-top: 295px;
+}
+
+.clikc{
+    display:flex;
+}
+
+.shope__clikc{
+    display: block;
+    position: absolute;
+    border-radius: 0.2777777778rem;
+    justify-content: center;
+    color: #1e1f20;
+    background: #EDEDED;
+    right: -13.3333333333rem;
+    margin-top: -100%;
+    padding: 0.8333333333rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+    width: 13.3333333333rem;
+}
+
+.dropdown:hover .shope__clikc{
+    opacity: 1;
+}
+
+.dropdown{
+    flex-direction: column;
+    max-width: max-content;
+    position: relative;
+    cursor: pointer;
+}
+
+.grape{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-47px -47px;
+
+}
+
+.nut{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-89px -5px;
+
+}
+.almond{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-5px -5px;
+
+}
+.washing-powder{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-89px -47px;
+
+}
+.apitherapy{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-47px -5px;
+
+}
+.beans{
+    width: rem(35px); height: rem(32px);
+    background: url(../img/shope/srite/spritesheet.png)-5px -47px;
+
+}
+
+.recept{
+    margin-bottom: rem(10px);
+    display: flex;
+}
+
+.recept__text{
+    font-weight: bold;
+    font-family: Alegreya Sans;
+    font-style: normal;
+    font-size: rem(15px);
+    line-height: rem(24px);
+    width: rem(150px);
+    margin-left: rem(13px);
+}
+
+.recept__gramm{
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(16px);
+    line-height: rem(24px);
+    width:15%;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}

@@ -1,0 +1,82 @@
+.form{
+    display: flex;
+
+    @include tablets{
+        padding: 0%;
+        flex-direction: column;
+    }
+
+    @include phones{
+        padding: 0;
+    }
+}
+
+.form__col{
+    flex: 1;
+    margin-right:15px;
+    @include tablets{
+        margin: 0;
+    }
+    @include phones{
+        margin: 0;
+    }
+}
+
+.form__col:last-child{
+    margin-right: 0;
+
+    @include tablets{
+        margin-right: 0;
+    }
+}
+
+.form__row{
+    margin-bottom: rem(18px);
+    display: flex;
+}
+
+.form__block{
+    flex: 1;
+    margin-right: rem(20px);
+}
+
+.form__block:last-child{
+    margin-right: 0;
+}
+
+.form__input{
+    width: 100%;
+    border: none;
+    padding: rem(18px) rem(11px);
+    border:solid rem(3px) transparent; 
+}
+
+.form__input--textaria{
+    height:rem(180px) ;
+    resize: none;
+}
+
+.form__input:focus{
+    border-color: #dee2bd;
+    outline: none;
+}
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: rem(15px);
+}
+
+.form__row:last-child{
+    margin: 0;
+}
+
+.form__contros.radio__visible{
+    background: url(../img/okye.png) center center no-repeat;
+}
+
+.form__btns{
+    margin-top: rem(40px);
+    display: flex;
+    justify-content: center;
+}

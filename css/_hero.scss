@@ -1,0 +1,111 @@
+.hero {
+    background:#61C4D9   url(../img/yzorHero.png) no-repeat right;;
+    height: 100vh;
+    min-height: 650px;
+    color: #fff;
+
+    &::before, &::after{
+        @include tablets{
+            display: none;
+        }
+    }
+
+    @include tablets{
+        background-position: right bottom 88%;
+    }
+
+
+}
+
+.hero__container{
+    background:
+    url(../img/comp.png) no-repeat right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    @include tablets{
+        background: none;
+    }
+}
+
+
+.hero__title-section{
+    margin-top: rem(100px);
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    @include tablets{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.hero__title-section::before{
+    @include tablets{
+        content:"";
+        width: rem(350px);
+        height: rem(350px);
+        background: url(../img/comp.png) center center no-repeat;
+        margin-bottom: rem(16px);
+        background-size: contain;
+
+        @include phones{
+            height:rem(300px);
+        }
+    }
+}  
+
+.hero__main-title{
+    font-weight: bold;
+    font-size: rem(68px);
+    line-height: rem(68px);
+    width: rem(600px);
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+    @include tablets{
+        font-size:rem(50px);
+        width:100%;
+        margin: 0;
+        line-height: 1;
+        @include phones{
+            width:100%;
+            margin: 0;
+        }
+    }
+}
+
+.hero__title-desc{
+    margin-bottom: rem(70px);
+    width: rem(400px);
+    font-size: rem(20px);
+    line-height: rem(29px);
+    display: flex;
+    align-items: flex-end;
+
+    @include tablets{
+        padding:rem(2px);
+        margin:rem(15px);
+        line-height:rem(18px);
+        font-size:rem(16px);
+    }
+
+    @include phones{
+        padding: 0 ;
+        width: 100%;
+    }
+}
+
+.hero__icon-section{
+    @include tablets{
+        display: none;
+    }
+}

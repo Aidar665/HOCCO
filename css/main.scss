@@ -1,0 +1,31 @@
+$containerWidth:1100px;
+$baseFontSize:18px;
+
+//breakpoints
+$tablets:768px;
+$phones:480px;
+
+//colors
+$blue:#61c4d9;
+$darkGreen:#0b4d3c;
+
+// setups
+@import "./media";
+@import "./layout";
+// components
+@import "./hero";
+@import "./header";
+@import "./features";
+@import "./section";
+@import "./headline";
+@import "./benefits";
+@import "./reviews-section";
+@import "./interactive";
+@import "./form";
+@import "./radio";
+@import "./burger";
+@import "./btn";
+@import "./fixed";
+@import "./footer";
+@import "./shope";
+

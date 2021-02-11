@@ -1,0 +1,18 @@
+.overle{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: all 0.4s;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overle:active{
+    opacity: 1;
+    left: 0;
+}
