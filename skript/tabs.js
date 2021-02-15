@@ -12,6 +12,5 @@ e.preventDefault();
     const target = $this.attr("data-open");
     const itemToShow = findBlockBayAlias(target);
     const curItem = $this.closest(".reviews__switcher__item");
-    itemToShow.addClass("active").siblings().removeClass("active")
-    curItem.addClass("active").siblings().removeClass("active");
-}
+    itemToShow.addClass("active").siblings().removeClass("active");
+    curItem.addClass("active").siblings().removeClass("active")})

@@ -4,7 +4,7 @@ const openItem = item =>{
     const textBlock = contentBlock.find(".team__content-block");
     const reqHeight = textBlock.Height();
 
-    container.addClass(;active)
+    container.addClass(active)
     contentBlock.Height(reqHeight);
 }
 

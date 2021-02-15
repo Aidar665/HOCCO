@@ -1,1 +1,1 @@
-$('.shope__section').bxSlider();
+$('slider').bxSlider();
