@@ -24,12 +24,15 @@
 }
 
 .team__title{
+    border: medium none;
+    text-decoration: none;
+    background: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     justify-content: center;
-    width:100%;
+    width: 100%;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
