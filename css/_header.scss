@@ -39,6 +39,7 @@ a.phone-number{
 .menu__link{
     white-space: nowrap;
     text-decoration: none;
+
 }
 
 .icon__phone{
@@ -50,4 +51,13 @@ a.phone-number{
     text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.menu__link{
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.menu__link:last-child{
+    margin: 0;
 }
