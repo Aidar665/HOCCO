@@ -39,6 +39,9 @@ a.phone-number{
 .menu__link{
     white-space: nowrap;
     text-decoration: none;
+    @include tablets{
+        margin: 0;
+    }
 
 }
 

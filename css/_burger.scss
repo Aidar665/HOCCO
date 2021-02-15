@@ -1,53 +1,121 @@
-.ham {
-  position: fixed;
-  z-index: 1000;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-  background-size: 100%;
-  display: none;
-  @include tablets{
-    display: inline;
-  }
-}
-
-
-.showClose {
-  background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
-}
-
-.navbar {
-  overflow:hidden;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: black;
-  width: 100%;
+body,html{
   height: 100%;
-  overflow: hidden;
-  color: white;
-  transform: translateY(-100%);
-  transition: transform 0.2s ease;
-  z-index: 999;
+  width: 100%;
+  padding:0;
+  margin:0;
 }
 
-.showNav {
-  transform: translateY(0);
-}
-
-.menulinkburger{
-  font-size: 30px;
+a{
+  color:white;
   text-decoration: none;
 }
 
-.menu__linkBurger{
-  margin: auto;
+ul,li{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.burger{
+  display: none;
+  position: fixed; 
+  top:20px;
+  right: 10%;
+  height: 25px;
+  width: 40px;
+  cursor:pointer;
+  z-index: 15;
+  transition:all .4s;
+  @include tablets{
+    display: flex;
+  }
+  
+  &__line{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    top:0;
+    left: 0;
+    transition:all .4s;
+
+    
+    &:nth-child(2){
+      top:50%;
+      transform:translateY(-50%);
+    }
+    
+    &:nth-child(3){
+      bottom:0;
+      top:initial;
+    }
+  }
+}
+
+.content{
+  background-color: black;
+  opacity: .8;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  
+  &__title{
+    color:#fff;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  transition:all .4s;
+  
+  position:fixed;
+  top:0;
+  left:100%;
+  opacity:0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+
+
+.burger--active{
+  .burger__line{
+    &:nth-child(1){
+      opacity:0;
+    }
+    
+    &:nth-child(2){
+      transform:rotate(45deg);
+    }
+    
+    &:nth-child(3){
+      transform:rotate(-45deg) translateY(-8px) translateX(5px);
+    }
+  }
+}
+
+.overlay--active{
+  left: 0;
+  opacity:1;
+}
+
+.body--active-menu{
+  overflow:hidden;
+}
+
+.menu__linkburger{
+  display: table-caption;
+  justify-content: center;
+  text-align: center;
+  font-size: 29px;
 }

@@ -1,6 +1,17 @@
-var navbar = document.querySelector(".navbar")
-var ham = document.querySelector(".ham")
-ham.addEventListener("click", toggleHamburger)
-function toggleHamburger(){
-  navbar.classList.toggle("showNav")
-  ham.classList.toggle("showClose")}
+let burger  = document.querySelector('.burger');
+let overlay = document.querySelector('.overlay');
+let body = document.querySelector('body');
+
+let links = document.querySelectorAll('.menu__link');
+
+links.forEach(function(element){
+  element.addEventListener('click' , toggleMenu);
+})
+
+function toggleMenu(){
+  burger.classList.toggle('burger--active');
+  overlay.classList.toggle('overlay--active');
+  body.classList.toggle('body--active-menu');
+}
+
+burger.addEventListener('click' , toggleMenu);
